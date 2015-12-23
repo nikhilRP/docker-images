@@ -8,5 +8,5 @@ docker build -t nikhilrp/zookeeper .
 
 Run image
 ```
-docker run -it --rm nikhilrp/zookeeper wget --help
+docker run -d --name zookeeper nikhilrp/zookeeper
 ```
