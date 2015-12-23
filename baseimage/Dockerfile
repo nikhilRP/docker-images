@@ -1,6 +1,6 @@
 FROM phusion/baseimage
 
-MAINTAINER 47 Degrees <developer@47deg.com>
+MAINTAINER nikhilRP <podduturi.nikhil@gmail.com>
 
 # Install basic packages
 RUN \
