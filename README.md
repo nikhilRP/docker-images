@@ -1,4 +1,4 @@
-# Docker images
+## Docker images
 
 Collection of docker images for my convenience
 
@@ -10,4 +10,4 @@ Collection of docker images for my convenience
 
 Credits:
 
-1. https://github.com/phusion/baseimage-docker (for a well written article on why to have a base image)
+1. Checkout this [link](http://phusion.github.io/baseimage-docker/) for a well written article on why to have a base image and what it is all about
