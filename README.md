@@ -5,9 +5,10 @@ Collection of docker images for my convenience
 
 1. Base image
 2. Java8
-3. Apache Kafka
-4. Apache Spark
-5. Apache Cassandra
+3. Apache Zookeeper
+4. Apache Kafka
+5. Apache Spark
+6. Apache Cassandra
 
 Credits:
 
