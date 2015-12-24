@@ -17,7 +17,7 @@ RUN curl -fsSL http://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binar
   && mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \
   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
 
-RUN curl -s http://d3kbcqa49mib13.cloudfront.net/spark-1.5.1.tgz | tar -xz -C /usr/local/
+RUN curl -s http://mirror.netcologne.de/apache.org/spark/spark-1.5.1/spark-1.5.1.tgz | tar -xz -C /usr/local/
 RUN cd /usr/local && ln -s spark-1.5.1 spark
 RUN cd /usr/local/spark/ && dev/change-scala-version.sh 2.11 && mvn -Phadoop-2.4 -Dscala-2.11 -DskipTests clean package
 
