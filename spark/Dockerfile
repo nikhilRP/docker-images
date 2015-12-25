@@ -9,7 +9,7 @@ ADD scripts/spark-defaults.conf /spark-defaults.conf
 ADD scripts/remove_alias.sh /remove_alias.sh
 
 ENV MAVEN_VERSION 3.3.3
-ENV MAVEN_OPTS -Xmx2048m -XX:MaxPermSize=512M
+ENV MAVEN_OPTS -Xmx2048m -XX:MaxMetaspaceSize=512M
 ENV JAVA_OPTIONS -Xms2G -Xmx4096m -XX:ReservedCodeCacheSize=128m -XX:MaxPermSize=512M
 ENV JAVA_OPTS -Xms2G -Xmx2G -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=512M -XX:ReservedCodeCacheSize=128M -XX:+UseCodeCacheFlushing
 
