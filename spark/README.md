@@ -43,3 +43,6 @@ You can run multiple workers. Every worker would be able to find master by its c
 ## Acknowledgements
 
 This docker image is on this excellent repository https://github.com/epahomov/docker-spark .
+
+## TODO
+* Out of memory errors have to be handled effectively
