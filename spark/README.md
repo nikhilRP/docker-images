@@ -4,15 +4,14 @@ This repository contains a set of scripts and configuration files to run a [Apac
 
 * Spark 1.5.1
 * Scala 2.11
-* Pre-built for Hadoop 2.4.0
 
 ## Build Docker Image
 
-    docker build -t nikhilrp/spark:1.5.1 .
+    docker build -t nikhilrp/spark .
 
 ## Push Image
 
-    docker push nikhilrp/spark:1.5.1
+    docker push nikhilrp/spark
 
 ## Run
 
@@ -23,7 +22,7 @@ docker run -d -t \
 -p 7077:7077 \
 -p 8080:8080 \
 --name spark_master \
-47deg/spark:1.5.1 \
+nikhilrp/spark \
 /start-master.sh "$@"
 ```
 
@@ -33,7 +32,7 @@ To run a worker node:
 docker run -d -t -P  \
 --name spark_worker_1 \
 --link spark_master:spark_master  \
-47deg/spark:1.5.1  \
+nikhilrp/spark  \
 /start-worker.sh "$@"
 ```
 
